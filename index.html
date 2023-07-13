@@ -49,7 +49,8 @@ h1{
     var myip = e.ip;
       $.getJSON('https://ipapi.co/'+myip+'/json', function(data){
       $('.city').text(data.city);
-      $('.country').text(data.country);
+      console.log(data)
+      $('.country').text(data.region);
   });
 });
   </script>
